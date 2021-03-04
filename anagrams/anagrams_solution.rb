@@ -5,6 +5,7 @@
 # ex: anagram_finder("Elbow", ["Hello, Bowel, Below"]) returns ["Bowel, Below"]
 # the method returns and empty array if no anagrams found.
 
+# Initial version, using hash notation:
 def anagrams(word, words)
   main_word_hash = letter_hash(word)
   words.select { |w| main_word_hash == letter_hash(w) }
@@ -16,6 +17,11 @@ def letter_hash(word)
     word_hash[c] ? word_hash[c] += 1 : word_hash[c] = 1
   end
   word_hash
+end
+
+# Refactored solution
+def better_anagrams(word, words)
+  words.chars.select { |w| w.chars.sort == word.chars.sort }
 end
 
 # TESTS - run the file to get feedback :)
