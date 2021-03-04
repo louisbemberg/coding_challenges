@@ -6,16 +6,7 @@
 # the method returns and empty array if no anagrams found.
 
 def anagrams(word, words)
-  main_word_hash = letter_hash(word)
-  words.select { |w| main_word_hash == letter_hash(w) }
-end
-
-def letter_hash(word)
-  word_hash = {}
-  word.chars.each do |c|
-    word_hash[c] ? word_hash[c] += 1 : word_hash[c] = 1
-  end
-  word_hash
+  # TODO: check if "words" has anagrams of "word" and return them in an array
 end
 
 # TESTS - run the file to get feedback :)
