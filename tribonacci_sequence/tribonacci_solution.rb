@@ -25,10 +25,10 @@ end
 
 # solution 2, simpler approach, abusing the property of .slice(a, b)
 def tribonacci(array, n)
-  for i in 3..n
-    array[i] = array[i - 1] + array[i - 2] + array[i - 3]
+  (3..n).each do |i|
+    array[i] = array.last(3).sum
   end
-  p array.slice(0, n)
+  array.slice(0, n)
 end
 
 # TESTS - RUN THE FILE TO GET FEEDBACK :)
