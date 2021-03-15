@@ -1,4 +1,5 @@
 # coding_challenges
+A list of coding challenges with exercise files, tests, and solutions! Check them out 😇
 
 Created a repo with sample exercices (and my suggested solutions) both for myself and for Le Wagon students who are interested in practicing more.
 
