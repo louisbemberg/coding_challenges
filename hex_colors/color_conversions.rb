@@ -9,35 +9,10 @@
 
 # Write a method that converts rgb into HEX.
 # Rules:
-# - The method Receives 3 parameters, outputs a string
+# The method Receives 3 parameters, outputs a string
 # Parameters should only range from 0-255.
 # ^ In case values outside of that range, interpret as nearest possible
 def rgb_to_hex(r, g, b)
-  hex = ''
-  arr1 = (0..15).to_a
-  arr2 = (0..9).to_a + ('A'..'F').to_a
-  dictionary = Hash[[arr1, arr2].transpose]
-  [r, g, b].each do |code|
-    code = 0 if code.negative?
-    code = 255 if code > 255
-    split_division = code.fdiv(16).to_s.split('.')
-    hex << dictionary[split_division[0].to_i].to_s
-    hex << dictionary[("0.#{split_division[1]}".to_f * 16).to_i].to_s
-  end
-  hex
-end
-
-# VERY refactored solution
-def rgb(r, g, b)
-  [r, g, b].map do |c|
-    if c <= 0
-      '00'
-    elsif c > 255
-      'FF'
-    else
-      c.to_s(16).upcase.rjust(2, '0')
-    end
-  end.join('')
 end
 
 # TESTS - RUN THE FILE TO GET FEEDBACK
