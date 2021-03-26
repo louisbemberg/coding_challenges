@@ -9,7 +9,9 @@ def anagrams(word, words)
   # TODO: check if "words" has anagrams of "word" and return them in an array
 end
 
-# TESTS - run the file to get feedback :)
-puts "got: #{anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada'])} expected: ['aabb', 'bbaa']"
-puts "got: #{anagrams('Hola', ['Halo', 'Hello', 'Bonjour'])} expected: ['Halo']"
-puts "got: #{anagrams('Mango', ['Pear', 'Apple'])} expected: []"
+# TESTS
+# run rspec spec/anagrams_spec.rb to get official tests
+# you can also uncomment the tests below and run ruby anagrams.rb
+# puts "got: #{anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada'])} expected: ['aabb', 'bbaa']"
+# puts "got: #{anagrams('Hola', ['Halo', 'Hello', 'Bonjour'])} expected: ['Halo']"
+# puts "got: #{anagrams('Mango', ['Pear', 'Apple'])} expected: []"
