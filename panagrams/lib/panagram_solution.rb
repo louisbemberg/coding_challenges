@@ -22,7 +22,7 @@ def panagram3?(string)
   string.downcase.scan(/[a-z]/).uniq.size == 26
 end
 
-# TESTS - run the file to get feedback :)
+# TESTS
 puts "Expected: false Got: #{panagram?('Hello World')}"
 puts "Expected: false Got: #{panagram?('')}"
 puts "Expected: true Got: #{panagram?('a_ab^^b0c56cddeeff_g, ghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz')}"
