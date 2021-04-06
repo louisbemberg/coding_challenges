@@ -15,11 +15,13 @@
 def rgb_to_hex(r, g, b)
 end
 
-# TESTS - RUN THE FILE TO GET FEEDBACK
-p rgb(255, 255, 255) # returns FFFFFF
-p rgb(255, 999, 300) # returns FFFFFF
-p rgb(0, 0, 0) # returns 000000
-p rgb(-30, 0, 0) # returns 000000
-p rgb(54, 71, 77) # returns #36474D
-p rgb(163, 11, 115) # returns  #A30B73
-p rgb(17, 133, 115) # returns 118573
+# TESTS
+# run 'rspec' to run the tests
+# alternatively, you can play around with the code below:
+p rgb_to_hex(255, 255, 255) # returns FFFFFF
+p rgb_to_hex(255, 999, 300) # returns FFFFFF
+p rgb_to_hex(0, 0, 0) # returns 000000
+p rgb_to_hex(-30, 0, 0) # returns 000000
+p rgb_to_hex(54, 71, 77) # returns #36474D
+p rgb_to_hex(163, 11, 115) # returns  #A30B73
+p rgb_to_hex(17, 133, 115) # returns 118573
