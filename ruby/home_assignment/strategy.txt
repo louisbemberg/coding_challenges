@@ -1,0 +1,25 @@
+Q1)
+
+- First, we need to get the data off the web.
+- How does this API work? It gives us a chunk of text as well as a next page
+- Our goal is to get all chunks of text of each page
+- When do we stop? When there's no more next page?
+pseudocode:
+
+# LOOP STARTS HERE => STOP LOOPING WHEN THERE'S NO NEXT PAGE
+  # request data from the API's url
+  # extract the words, add them to our complete string.
+  # extract the next page URL
+# LOOP ENDS HERE
+
+Great, the data is off the web and now into our program. We could now start counting each word:
+
+# Find a way to extract only the words from the string
+# create an empty hash
+# iterate over the words and gradually add their count to the hash
+# sort the hash first by count, then alphabetically
+
+
+We now have 2 working functions/methods. One that extracts, the other that counts
+
+Now all is left is to prompt the user for an API url via the terminal (in a different file maybe?)
