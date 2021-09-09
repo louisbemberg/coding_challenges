@@ -12,9 +12,17 @@ def two_sum_bruteforce_v2(nums, target):
     for tup in combs:
         if sum(tup) == target: return [nums.index(i) for i in tup]
 
-# more efficient
-
+# better: hashing
+def two_sum_hashing(nums, target):
+    num_hash = {}
+    for index, num in enumerate(nums):
+        if target - num in num_hash:
+            return [index, num_hash[target - num]]
+        else:
+            num_hash[num] = index
 
 print(two_sum_bruteforce([2,7,11,15], 9)) # should be [0, 1] or [1, 0]
 
 print(two_sum_bruteforce_v2([2,4,22,10,3,29], 7)) # should be [1, 4] or [4, 1]
+
+print(two_sum_hashing([2,4,22,10,3,29], 7))

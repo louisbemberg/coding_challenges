@@ -16,11 +16,12 @@ def letter_arrangements(word, case_insensitive = True):
         letter_count[letter] = letter_count.get(letter, 0) + 1
     numerator = math.factorial(len(word))
     denominator = math.prod([math.factorial(i) for i in letter_count.values()])
+    print(f"{word}: {len(word)}! / ({'!'.join([str(i) for i in letter_count.values()])}!)")
     return int(numerator / denominator)
 
 
 print(letter_arrangements("Fluke"))
 print(letter_arrangements("Propose"))
-print(letter_arrangements("Misssissippi"))
+print(letter_arrangements("Mississippi"))
 print(letter_arrangements("Arrange"))
-print(letter_arrangements("Supercalifragilisticexpialidocious"))
+print(letter_arrangements("Supercalifragilisticexpialidocious")) # 1412469529257855332619514806272
