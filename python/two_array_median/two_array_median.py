@@ -48,4 +48,4 @@ print(find_median([], [1])) # should be 1
 print(find_median([2], [])) # should be 2
 print(find_median([1,2,3,4], [1,2,2,3,4])) # should be 2
 print(find_median([0,2,4,6], [1,3,5,7])) # should be 3.5
-print(find_median([10], [5,6,7,8,11,12,13,14])) # should be 
+print(find_median([10], [5,6,7,8,11,12,13,14])) # should be 10
