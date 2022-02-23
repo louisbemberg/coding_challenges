@@ -55,6 +55,7 @@ def getKthNode(curr, k):
     return curr
 
 
+# NOT USEFUL FOR PROBLEM BUT STILL HELPFUL CODE TO UNDERSTAND
 # returns a linked list with its first k elements reversed 
 def reverse_first_k_elements(l, k):
     flipped_tail = l
